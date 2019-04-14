@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="javascript" href="assets/javascript/javascript.js">
+    <link rel="images" href="assets/images/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Totally Trivial Trivia</h1>
+            <p>You have 100 seconds! Choose wisely!</p>
+        </div>
+
+        <div class="alert alert-info" role="alert" id="clock"></div>
+
+    </div>
+    <button type="button" class="btn btn-primary" id="start">Start</button>
+
+    <div class="container" id="questions">
+        <h2>Choose Wisely</h2>
+        <p> </p>
+        <div class="panel-group">
+            <div class="panel panel-success">
+                <div class="panel-heading">What was the first telegraph message sent by inventor Samuel Morse?</div>
+                <div class="panel-body"><label class="radio-inline"><input type="radio" name="q1">"V for
+                        victory"</label>
+                    <label class="radio-inline"><input type="radio" name="q1" id="correct1">"What hath god
+                        wrought"</label>
+                    <label class="radio-inline"><input type="radio" name="q1">"This is merely a test"</label>
+                    <label class="radio-inline"><input type="radio" name="q1">"Samuel F.B. Morse"</label></div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">The number system we use today is known as the Hindu-Arabic or Indo-Arabic.
+                    It is of indian origin but was brought to Europe by Arab Muhammed ibn-Musa al-Khwarizmi. In what
+                    ways did this new number system improve upon the old? </div>
+                <div class="panel-body"><label class="radio-inline"><input type="radio" name="q2">Created
+                        Algebra</label>
+                    <label class="radio-inline"><input type="radio" name="q2">Positional Number System</label>
+                    <label class="radio-inline"><input type="radio" name="q2">The number zero</label>
+                    <label class="radio-inline"><input type="radio" name="q2" id="correct2">All of the above</label>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">Which early hacker learned daguerreotype, one of the early modes of making
+                    photographs, from Louis Daguerre himself, later teaching this new and innovative craft to his
+                    colleagues who would later be responsible for creating the most memorable photographs of the Civil
+                    War and Abraham Lincoln?</div>
+                <div class="panel-body"><label class="radio-inline"><input type="radio" name="q3">Goerge Boole</label>
+                    <label class="radio-inline"><input type="radio" name="q3" id="correct3">Samuel Morse</label>
+                    <label class="radio-inline"><input type="radio" name="q3">Valentin Hauy</label>
+                    <label class="radio-inline"><input type="radio" name="q3">Louis Braille</label></div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">Who invented the first system of raised letters on paper that could be read by
+                    touch?</div>
+                <div class="panel-body"><label class="radio-inline"><input type="radio" name="q4">Goerge Boole</label>
+                    <label class="radio-inline"><input type="radio" name="q4">Samuel Morse</label>
+                    <label class="radio-inline"><input type="radio" name="q4" id="correct4">Valentin Hauy</label>
+                    <label class="radio-inline"><input type="radio" name="q4">Louis Braille</label></div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">The origins for Braille are a result of which of the following?</div>
+                <div class="panel-body"><label class="radio-inline"><input type="radio" name="q5">"Night Writing"
+                        invented by a French army captain hoping to read and transmit messages at night</label>
+                    <label class="radio-inline"><input type="radio" name="q5">A wealth French boy who stuck a pointed
+                        tool in his eye</label>
+                    <label class="radio-inline"><input type="radio" name="q5">A sighted man </label>
+                    <label class="radio-inline"><input type="radio" name="q5" id="correct5">All of the above</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Questions -->
+    <!-- <div class="question">
+            <h4> What was the first telegraph message sent by inventor Samuel Morse? </h4>
+            <label class="radio-inline"><input type="radio" name="q1" >"V for victory"</label>
+            <label class="radio-inline"><input type="radio" name="q1" id="correct1">"What hath god wrought"</label>
+            <label class="radio-inline"><input type="radio" name="q1">"This is merely a test"</label>
+            <label class="radio-inline"><input type="radio" name="q1">"Samuel F.B. Morse"</label>
+        </div> -->
+    <!-- <div class="question">
+            <h4> The number system we use today is known as the Hindu-Arabic or Indo-Arabic. It is of indian origin but was brought to Europe by Arab Muhammed ibn-Musa al-Khwarizmi. In what ways did this new number system improve upon the old? </h4>
+            <label class="radio-inline"><input type="radio" name="q2" >Created Algebra</label>
+            <label class="radio-inline"><input type="radio" name="q2" >Positional Number System</label>
+            <label class="radio-inline"><input type="radio" name="q2">The number zero</label>
+            <label class="radio-inline"><input type="radio" name="q2" id="correct2">All of the above</label>
+        </div> -->
+    <!-- <div class="question">
+            <h4> Which early hacker learned daguerreotype, one of the early modes of making photographs, from Louis Daguerre himself, later teaching this new and innovative craft to his colleagues who would later be responsible for creating the most memorable photographs of the Civil War and Abraham Lincoln?</h4>
+            <label class="radio-inline"><input type="radio" name="q3" >Goerge Boole</label>
+            <label class="radio-inline"><input type="radio" name="q3" id="correct3">Samuel Moorse</label>
+            <label class="radio-inline"><input type="radio" name="q3">Valentin Hauy</label>
+            <label class="radio-inline"><input type="radio" name="q3">Louis Braille</label>
+        </div> -->
+    <!-- <div class="question">
+            <h4> Who invented the first system of raised lettes on paper that could be read by touch?</h4>
+            <label class="radio-inline"><input type="radio" name="q4" >Goerge Boole</label>
+            <label class="radio-inline"><input type="radio" name="q4" >Samuel Moorse</label>
+            <label class="radio-inline"><input type="radio" name="q4" id="correct4">Valentin Hauy</label>
+            <label class="radio-inline"><input type="radio" name="q4">Louis Braille</label>
+        </div> -->
+    <!-- <div class="question">
+            <h4> The origins for Braille are a result of which of the following?</h4>
+            <label class="radio-inline"><input type="radio" name="q5" >"Night Writing" invented by a French army captain hoping to read and transmit messages at night</label>
+            <label class="radio-inline"><input type="radio" name="q5">A wealth French boy who stuck a pointed tool in his eye</label>
+            <label class="radio-inline"><input type="radio" name="q5" >A sighted man </label>
+            <label class="radio-inline"><input type="radio" name="q5" id="correct5">All of the above</label>
+        </div> -->
+
+    <button type="button" class="btn btn-default" id="submit">Submit</button>
+
+    <div id="results"></div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
