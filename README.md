@@ -1,6 +1,8 @@
-# TriviaGame
+# Code History Trivia Game! 
 
+Summary: the evolution of code is an interesting and varied subject. Test your history knowledge of code! 
 
+Technologies: window setInterval() Method
 
 * You'll create a trivia form with multiple choice.
 
@@ -10,4 +12,4 @@
 
 * Don't let the player pick more than one answer per question.
 
-
+Deployed Github Page: 
