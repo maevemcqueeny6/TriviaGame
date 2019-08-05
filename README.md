@@ -12,3 +12,4 @@ Technologies: window setInterval() Method
 
 * Don't let the player pick more than one answer per question.
 
+Deployed Github Page: https://maevemcqueeny6.github.io/TriviaGame/
